@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#main__pokemon_list{
+    padding-left: 2%;
+    padding-right: 2%;
+    overflow-y: scroll;
+}
+
+main{
+    display: flex;
+    border: 3px solid peru;
+    background-color: burlywood;
+    width: 80%;
+    height: 800px;
+}
+
+.body__header{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.pokemons__header{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.pokemons__types{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.pokemons__image{
+    width: 10rem;
+}
+
+#main__data{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}

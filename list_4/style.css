@@ -1,0 +1,67 @@
+html {
+    font-size: clamp(1rem, 1vmin + 1rem, 2rem);
+}
+
+body {
+    background-color: #FFF6D0;
+    display: flex;
+    justify-content: center;
+}
+
+.main__wrapper {
+    display: block;
+    background-color: white;
+    box-shadow: 0px 1px 4px 0px black;
+    width: 80%;
+    min-width: 250px;
+    padding: 1rem;
+}
+
+.main_header {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.form__form_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.form_input {
+    width: 100%;
+}
+
+.form__box {
+    display:block;
+    margin: 10px;
+}
+
+.form__label .form_input__option{
+    font-size: 1rem;
+}
+
+input:invalid, textarea:invalid{
+    border-color: red;
+    background-color: rgb(255, 209, 194);
+}
+
+@media (pointer:coarse) {
+    input[type="checkbox"] {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+.form__checkbox {
+    text-align: center;
+}
+
+#submit {
+    height: 3rem;
+    border-color: blue;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    width: 100%;
+    font-size: 1.5rem;
+}

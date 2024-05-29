@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lista 4</title>
+  </head>
+  <body>
+    <section class="main__wrapper">
+      <header class="main_header">
+        <h1 class="main_header__header">CONTACT US!</h1>
+      </header>
+      <form class="form">
+        <div class="form__form_wrapper">
+          <div class="form__box">
+            <label class="form__label" for="form__name">Name (required)</label>
+            <input class="form_input" id="form__name" name="form__name" required minlength="3" />
+          </div>
+          <div class="form__box">
+            <label class="form__label" for="form__surname">Surname </label>
+            <input class="form_input" id="form__surname" name="form__surname" />
+          </div>
+          <div class="form__box">
+            <label class="form__label" for="form__email">Email (required)</label>
+            <input class="form_input" id="form__email" type="email" name="form__email" required pattern="\S+@\S+\.\S+" />
+          </div>
+          <div class="form__box">
+            <label class="form__label" for="form__phone">Phone</label>
+            <input class="form_input" id="form__phone" name="form__phone" pattern="[0-9]{9}"/> 
+          </div>
+          <div class="form__box">
+            <label class="form__label" for="form__reason">Reason </label>
+            <select class="form_input" id="form__reason" name="form__reason">
+              <option class="form_input__option" value="">-- select an option --</option>
+              <option class="form_input__option" value="option1">option 1</option>
+              <option class="form_input__option" value="option2">option 2</option>
+              <option class="form_input__option" value="option3">option 3</option>
+            </select>
+          </div>
+          <div class="form__box">
+            <label class="form__label" for="form__mess">Message (required)</label>
+            <textarea class="form_input" id="form__mess" name="form__mess" required minlength="20"></textarea>
+          </div>
+        </div>
+        <div class="form__checkbox form__box ">
+          <label class="form__label" for="form__news">Subscribe to the newsletter</label>
+          <input id="form__news" type="checkbox" name="form__news" />
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

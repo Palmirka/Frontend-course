@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body *{
+    font-size: 1rem;
+}
+
+.box#first-box,
+.box#second-box,
+.box#third-box{
+    background-color: #00FF0F;
+    color: white;
+    width: 250px;
+    height: 150px;
+    margin: 20px;
+    padding: 15px;
+}
+
+.box#second-box{
+    border: 10px;
+    border-style: dashed;
+    border-color: blue;
+    background-color: red;
+}
+
+.animal-list > li::marker{
+    color: red;
+}
+
+ol > li::marker{
+    color: green;
+}
+
+ul > li::marker{
+    color: blue;
+}
+
+#second-section li > * > li:first-child{
+    color:turquoise;
+}
+
+p > a.link{
+    color: #437bc4;
+    text-decoration: none;
+}
+
+a.link:visited{
+    color: violet;
+}
+
+a.link:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+a.link::before{
+    content: "🔗";
+    display:inline-block;
+}
+
+img.image{
+    width: 80vw;
+    height: auto;
+    min-width: 400px;
+    max-width: 1000px;
+}
+
+h2{
+    font-size: 1.8rem;
+}

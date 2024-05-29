@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #fbf5f5;
+    font-family: 'Roboto', 'Arial';
+}
+
+.content {
+    display: flex;
+}
+
+.main_header {
+    background-color: white;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+    font-size: 2.5rem;
+    justify-content: center;
+    display: flex;
+}
+
+.navigation {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    position: sticky;
+    top: 0px;
+    font-size: 1.5rem;
+}
+
+.navigation__link {
+    display: flex;
+    height: 4rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation__item:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.content__main {
+    background-color: #ECECF7;
+    padding: 2rem;
+}
+
+.figure--right{
+    float: right;
+}
+
+.figure--left{
+    float: left;
+}
+
+.figure {
+    margin-inline: 20px;
+}
+
+.article {
+    clear: both;
+}
+
+.warning {
+    text-align: center;
+    min-width: 500px;
+    width: 70%;
+    background-color: #F4C5B7;
+    border: 3px solid #FAF9F8;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+.warning__wrapper {
+    display:flex;
+    justify-content: center;
+}
+
+.warning__figure {
+    margin-block-start: 0px;
+    margin-inline-end: 2rem;
+}
+
+.gallery__wrapper {
+    display: grid;
+    grid-template-areas: 
+        "first second forth"
+        "first third third";
+    gap: 1rem;
+}
+
+.gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__first_item {
+    grid-area: first;
+}
+
+.gallery__second_item {
+    grid-area: second;
+}
+
+.gallery__third_item {
+    grid-area: third;
+}
+
+.gallery__forth_item {
+    grid-area: forth;
+}
+
+.footer__wrapper {
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    font-size: 0.7rem;
+}
+
+.content__main h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.content__main h3 {
+    font-size: 1.5rem;
+}
+
+.figure__caption{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
